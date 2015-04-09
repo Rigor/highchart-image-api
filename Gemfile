@@ -13,13 +13,14 @@ gem 'puma'
 gem 'pg'
 
 group :production do
-  gem 'rails_log_stdout', git: 'git://github.com/threadedlabs/rails_log_stdout.git'
+  gem 'rails_log_stdout'#, git: 'git://github.com/threadedlabs/rails_log_stdout.git'
   gem 'rpm_contrib'
 end
 
 group :test, :development do
   gem 'rspec-rails'
   gem 'pry-rails'
+  gem 'pry-remote'
   gem 'pry-nav'
 end
 
